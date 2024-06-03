@@ -20,6 +20,11 @@ body {
     margin-right: 5rem;
 }
 
+.px-6 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
 .navbar-oval {
     background-color: #F5F1F1;
     border-radius: 50px;
@@ -39,6 +44,11 @@ body {
 
 .hero-img {
     max-width: 100%;
+}
+
+.icon {
+    /* filter: invert(33%) sepia(33%) saturate(2473%) hue-rotate(182deg) brightness(90%) contrast(88%); */
+    fill: #1A69AF;
 }
 
 .mx-hero {
@@ -124,6 +134,11 @@ body {
     .mx-6 {
         margin-left: 1.5rem;
         margin-right: 1.5rem;
+    }
+
+    .px-6 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     .mx-hero {
