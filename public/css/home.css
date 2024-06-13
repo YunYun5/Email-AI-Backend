@@ -3,6 +3,13 @@ body {
     background-color: #E2ECF4;
 }
 
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+.carousel-indicators [data-bs-target] {
+    background-color: black;
+}
+
 .sidebar {
     background-color: #F5F1F1;
 }
@@ -23,6 +30,10 @@ body {
 .px-6 {
     padding-left: 5rem;
     padding-right: 5rem;
+}
+
+.footer-bg {
+    background-color: #F5F1F1;
 }
 
 .navbar-oval {
@@ -47,8 +58,7 @@ body {
 }
 
 .icon {
-    /* filter: invert(33%) sepia(33%) saturate(2473%) hue-rotate(182deg) brightness(90%) contrast(88%); */
-    fill: #1A69AF;
+    filter: invert(36%) sepia(91%) saturate(4000%) hue-rotate(190deg) brightness(90%) contrast(85%);
 }
 
 .mx-hero {

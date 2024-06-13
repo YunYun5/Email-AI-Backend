@@ -50,6 +50,10 @@ app.get("/register", (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'views', "register.html"));
 });
 
+app.get("/pricing", (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'views', "pricing.html"));
+});
+
 app.get("/logout", (req, res) => {
   req.logout((err) => {
     if (err) console.log(err);
