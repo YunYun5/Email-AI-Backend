@@ -39,19 +39,19 @@ app.use((req, res, next) => {
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'views', 'home.html'));
+  res.sendFile(path.join(__dirname, "public", "views", "home.html"));
 });
 
 app.get("/login", (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'views', "login.html"));
+  res.sendFile(path.join(__dirname, "public", "views", "login.html"));
 });
 
 app.get("/register", (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'views', "register.html"));
+  res.sendFile(path.join(__dirname, "public", "views", "register.html"));
 });
 
 app.get("/pricing", (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'views', "pricing.html"));
+  res.sendFile(path.join(__dirname, "public", "views", "pricing.html"));
 });
 
 app.get("/logout", (req, res) => {
@@ -63,7 +63,7 @@ app.get("/logout", (req, res) => {
 
 app.get("/profile", (req, res) => {
   if (req.isAuthenticated()) {
-    res.sendFile(path.join(__dirname, 'public', 'views', "profile.html"));  
+    res.sendFile(path.join(__dirname, "public", "views", "profile.html"));
   } else {
     res.redirect("/login");
   }
@@ -100,7 +100,7 @@ passport.use(
 
         // Check if the user already exists in the database
         let user = await User.findOne({ googleId: profile.id });
-        
+
         if (!user) {
           console.log("User not found. Creating new user...");
           // If not found, create a new user
